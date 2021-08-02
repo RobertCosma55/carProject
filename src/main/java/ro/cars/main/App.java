@@ -21,6 +21,7 @@ public class App {
             Car car = new Car("Bmw", "320",189, CarType.BREAK );
             session.save(car);
             tx.commit();
+            session.close();
         }catch (Exception e){
             e.printStackTrace();
         }
